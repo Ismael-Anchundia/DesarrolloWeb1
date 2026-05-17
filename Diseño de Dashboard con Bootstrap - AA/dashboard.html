@@ -7,32 +7,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
 
 <body style="font-family:Georgia, 'Times New Roman', Times, serif">
-    <nav class="navbar navbar-expand-lg bg-primary-subtle" >
-        <div class="container-fluid">
-            <a class="navbar-brand" >
-            <img src="/img/logo.webp" alt="Logo" width="80" height="80" class="d-inline-block align-text-center">
-            Panel Administrativo
+    <nav class="navbar bg-primary-subtle shadow-sm">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
+            
+            
+            <a class="navbar-brand fw-bold text-primary-emphasis mb-0">
+                <img src="/img/logo.webp" alt="Logo" width="50" height="50" class="d-inline-block align-text-center rounded-circle me-2">
+                <span class="d-none d-sm-inline">Panel Administrativo</span>
+                <span class="d-inline d-sm-none">Panel</span> <!-- Texto más corto en celulares para que no ocupe toda la pantalla -->
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav  ms-auto me-4">
-                <li class="nav-item dropdown">
+
+            
+            <div class="d-flex align-items-center gap-3">
                 
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Admin
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Amy TS</a></li>
-                    <li><a class="dropdown-item" href="#">Ismael AC</a></li>
-                    <li><a class="dropdown-item" href="#">Jonathan MR</a></li>
-                </ul>
-                </li>
-            </ul>
-            </div>
+               
+                <div class="dropdown">
+                    <a class="nav-link dropdown-toggle fw-medium text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Amy TS</a></li>
+                        <li><a class="dropdown-item" href="#">Ismael AC</a></li>
+                        <li><a class="dropdown-item" href="#">Jonathan MR</a></li>
+                    </ul>
+                </div>
+
                 <!-- Boton de contacto -->
-                <a href="#" class="btn btn-outline-danger">Contacto</a>
+                <a href="#" class="btn btn-outline-danger btn-sm">Contacto</a>
+            </div>
+
         </div>
     </nav>
 
