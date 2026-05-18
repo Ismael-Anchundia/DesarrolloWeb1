@@ -101,8 +101,12 @@
             </div>
             <div class="offcanvas-body list-group">
                 <ul class="list-group">
-                    <a class="list-group-item" href="#" onclick="mostrar('inicio')">Inicio</a>
-                    <a class="list-group-item" href="#" onclick="mostrar('usuarios')">Usuarios</a>
+                    <a class="list-group-item" href="#" onclick="mostrar('inicio')">
+                        <img src="/Diseño de Dashboard con Bootstrap - AA/img/casa.png" alt="InicioIcono" width="20" height="20" class="d-inline-block"> 
+                        Inicio </a>
+                    <a class="list-group-item" href="#" onclick="mostrar('usuarios')">
+                        <img src="/Diseño de Dashboard con Bootstrap - AA/img/usuario.png" alt="UsuarioIcono" width="20" height="20" class="d-inline-block">
+                        Usuarios</a>
                 </ul>
             </div>
         </div>
@@ -282,7 +286,11 @@
                     <td>Juan</td>
                     <td>juan@gmail.com</td>
                     <td>Admin</td>
-                    <td></td>
+                    <td><select class="form-select">
+                        <option>Activo</option>
+                        <option>No activo</option>
+                        </select>
+                    </td>
                     
                 </tr>
             </tbody>
@@ -367,6 +375,11 @@
                 <td>${nombre}</td>
                 <td>${email}</td>
                 <td>${rol}</td>
+                <td><select class="form-select form-select-sm">
+                    <option>Activo</option>
+                    <option>No activo</option>
+                    </select>
+                </td>
             </tr>
         `;
 
